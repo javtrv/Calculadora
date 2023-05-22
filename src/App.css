@@ -1,0 +1,84 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #282c34;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+h1 {
+  color: rgb(239, 243, 244);
+}
+
+.casilla {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid rgb(239, 243, 244);
+  height: 100px;
+  width: 100px;
+  color: rgb(239, 243, 244);
+  cursor: pointer;
+}
+
+.casilla:active {
+  background-color: rgb(199, 180, 228);
+}
+
+.casilla.operacion {
+  border: 1px solid rgb(197, 155, 221);
+}
+
+.casilla.especial {
+  border: 1px solid rgb(81, 76, 84);
+}
+
+.calculadora {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+
+.pantalla {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid rgb(239, 243, 244);
+  height: 100px;
+  width: 93%;
+  font-size: 1.5em;
+  font-weight: bold;
+  background-color: rgb(255, 255, 255);
+}
